@@ -811,6 +811,7 @@ function getStackTraceLocations(
   const stackTraceLocations: ConsoleMessageLocation[] = [];
   if (stackTrace) {
     for (const callFrame of stackTrace.callFrames) {
+      console.log('callframe!!')
       stackTraceLocations.push({
         url: callFrame.url,
         scriptId: callFrame.scriptId,
