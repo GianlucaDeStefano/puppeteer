@@ -388,7 +388,6 @@ export class BidiPage extends Page {
 
   #onLogEntryAdded(event: Bidi.Log.Entry): void {
     const frame = this.frame(event.source.context);
-    console.log(JSON.stringify(frame))
     if (!frame) {
       return;
     }
