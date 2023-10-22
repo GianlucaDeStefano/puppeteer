@@ -813,6 +813,7 @@ function getStackTraceLocations(
     for (const callFrame of stackTrace.callFrames) {
       stackTraceLocations.push({
         url: callFrame.url,
+        scriptId: callFrame.scriptId,
         lineNumber: callFrame.lineNumber,
         columnNumber: callFrame.columnNumber,
       });

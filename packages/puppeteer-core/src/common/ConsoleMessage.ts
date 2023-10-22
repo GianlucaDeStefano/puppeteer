@@ -34,6 +34,11 @@ export interface ConsoleMessageLocation {
    * 0-based column number in the resource if known or `undefined` otherwise.
    */
   columnNumber?: number;
+
+  /**
+   * scriptId of the resource if known or `undefined` otherwise.
+   */
+  scriptId?: number;
 }
 
 /**
