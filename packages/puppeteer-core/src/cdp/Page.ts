@@ -859,10 +859,12 @@ export class CdpPage extends Page {
     const stackTraceLocations = [];
     if (stackTrace) {
       for (const callFrame of stackTrace.callFrames) {
+        console.warn(callFrame);
         stackTraceLocations.push({
           url: callFrame.url,
           lineNumber: callFrame.lineNumber,
           columnNumber: callFrame.columnNumber,
+          scriptId: callFrame.scriptId,
         });
       }
     }
